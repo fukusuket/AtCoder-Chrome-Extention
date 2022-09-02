@@ -3,9 +3,16 @@
     "description": "Build an Extension!",
     "version": "0.1",
     "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-    },
+    "content_scripts": [
+        {
+          "matches": [
+            "*://*.contest.atcoder.jp/tasks/*",
+            "*://atcoder.jp/contests/*/tasks/*"],
+          "js": [
+            "jquery-3.3.1.min.js",
+            "content.js"]
+        }
+      ],
     "permissions" : [
         "clipboardWrite",
         "storage"
