@@ -13,11 +13,12 @@ This extention creates python units and copy clibord when loading the Atcoder pa
    3. Click the LOAD UNPACKED button and select the 1 directory.
 
 ## How to use
-No action needed. Copy test case to the clipboard as soon as the page loads.
+No action needed. 
+Automatically copies the Python unit test code to the clipboard when the AtCoder Tasks page loads.
 
 
 ## Input
-Loding AtCoder page.
+Loding AtCoder problem page.
 
 ## Output
 For example, if you load [ABC 139 B problem](https://atcoder.jp/contests/abc139/tasks/abc139_b),
