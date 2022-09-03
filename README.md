@@ -1,13 +1,13 @@
 # AtCoder-Chrome-Extention
 
 ## About
-This extention creates python units and copy clibord when loading the Atcoder page.
+This extention creates python units and copy clibord when loading the Atcoder Tasks page.
 
 
 ## Install
 
 1. git clone https://github.com/fukusuket/AtCoder-Chrome-Extention.git
-2. [Follow the developer's guide](https://developer.chrome.com/docs/extensions/mv2/getstarted/), the steps below to install
+2. [Follow the developer's guide](https://developer.chrome.com/docs/extensions/mv2/getstarted/), Install with the following procedure.
    1. Open the Extension Management page by navigating to chrome://extensions
    2. Enable Developer Mode by clicking the toggle switch next to Developer mode.
    3. Click the LOAD UNPACKED button and select the 1 directory.
@@ -42,5 +42,5 @@ then following unit tests are copeid to clibord.
 ```
 
 ## Acknowledgments
-This tool is based on the following tools.
+This extention is based on the following tools.
 - [ac-unit-test](https://github.com/YujiSoftware/ac-unit-test) by @YujiSoftware
