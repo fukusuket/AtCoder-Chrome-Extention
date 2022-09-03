@@ -75,7 +75,6 @@ function createPyUnittest(io) {
         self.assertEqual(res, ans)
   `;
     }
-    alert(text)
     return text;
 };
 function saveToClipboard(str) {
