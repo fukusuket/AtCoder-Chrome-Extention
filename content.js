@@ -65,10 +65,9 @@ function createPyUnittest(io) {
     for (const [i, t] of Object.entries(io)) {
         let inp_txt = t.input.trim().split("\n").map(x => sp(x));
         let out_txt = t.output.trim().split("\n").map(x => sp(x));
-        let k = i + 1;
         text +=
             `    
-    def test_${k}(self):
+    def test_${Number(i) + 1}(self):
         ans = func(${inp_txt})
         res = ${out_txt}
         self.assertEqual(res, ans)
