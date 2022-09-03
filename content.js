@@ -1,5 +1,4 @@
 function getText() {
-    let name = null;
     let input = null;
     let output = null;
     const io = [];
@@ -30,16 +29,15 @@ function getText() {
             }
             const header = h3[0].firstChild.textContent.trim();
             if (header.indexOf("入力例") == 0 || header.indexOf("Sample Input") == 0) {
-                name = header.replace(/\s+/g, "_");
                 input = example.trim();
             } else if (header.indexOf("出力例") == 0 || header.indexOf("Sample Output") == 0) {
                 output = example.trim();
             }
         }
 
-        if (name != null && input != null && output != null) {
-            io.push({ name: name, input: input, output: output });
-            name = input = output = null;
+        if (input != null && output != null) {
+            io.push({ input: input, output: output });
+            input = output = null;
         }
     }
 
@@ -64,12 +62,12 @@ function sp(str) {
 
 function createPyUnittest(io) {
     let text = '';
-    for (const t of io) {
+    for (const [i, t] of Object.entries(io)) {
         let inp_txt = t.input.trim().split("\n").map(x => sp(x));
         let out_txt = t.output.trim().split("\n").map(x => sp(x));
         text +=
             `    
-    def test_${t.name}(self):
+    def test_${i}(self):
         ans = func(${inp_txt})
         res = ${out_txt}
         self.assertEqual(res, ans)
