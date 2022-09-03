@@ -38,7 +38,6 @@ then following unit tests are copeid to clibord.
         ans = func([8 8])
         res = [1]
         self.assertEqual(res, ans)
-  
 ```
 
 ## Acknowledgments
