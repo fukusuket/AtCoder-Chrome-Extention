@@ -50,13 +50,13 @@ function sp(str) {
     const s = String(str).trim();
     if (s.includes(' ')) {
         return "[" + s.split(' ').map(x => {
-            if (String(x).match(/^\d+$/)) {
+            if (String(x).match(/^-?\d+$/)) {
                 return x;
             }
             return "\x22" + x + "\x22";
         }) + "]" ;
     }
-    if (s.match(/^\d+$/)) {
+    if (s.match(/^-?\d+$/)) {
         return s;
     }
     return "\x22" + s + "\x22";
