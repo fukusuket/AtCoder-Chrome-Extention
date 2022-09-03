@@ -24,19 +24,19 @@ Loding AtCoder problem page.
 For example, if you load [ABC 139 B problem](https://atcoder.jp/contests/abc139/tasks/abc139_b),
 then following unit tests are copeid to clibord.
 ```
-    def test_入力例_1(self):
-        ans = func([4 10])
-        res = [3]
+    def test_1(self):
+        ans = func([4, 10])
+        res = 3
         self.assertEqual(res, ans)
-      
-    def test_入力例_2(self):
-        ans = func([8 9])
-        res = [2]
+
+    def test_2(self):
+        ans = func([8, 9])
+        res = 2
         self.assertEqual(res, ans)
-      
-    def test_入力例_3(self):
-        ans = func([8 8])
-        res = [1]
+
+    def test_3(self):
+        ans = func([8, 8])
+        res = 1
         self.assertEqual(res, ans)
 ```
 
